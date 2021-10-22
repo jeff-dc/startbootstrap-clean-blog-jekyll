@@ -2,7 +2,7 @@
 layout: page
 title: Resume
 description: This is what I do.
-background: '/img/bg-about.jpg'
+background: '/img/bg-resume.jpg'
 ---
 
 # **Professional Experience**
@@ -41,7 +41,7 @@ Provided world class maintenance support to front line military units. Managed s
 
 # **Volunteer Experience**
 **Veteran Hiring Mentor**<br>
-Hire Heroes USA / 2020 - Present<br>
+Hire Heroes USA / 2020 - Present
 
 Employment assistance is the #1 requested service from transitioning military members, and Hire Heroes USA provides that service to thousands each year.
 
@@ -49,7 +49,7 @@ Through personalized service and support, we help veterans and military spouses 
 
 Six career-seeking veterans and service members mentored to date and one hired into full time employment.
 
-**Cleanup Volunteer**
+**Cleanup Volunteer**<br>
 Keep Austin Beautiful / 2015 - 2016
 
 Cleaned banks of rivers and trails of local parks for Keep Austin Beautiful.
