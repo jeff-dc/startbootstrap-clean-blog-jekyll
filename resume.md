@@ -109,13 +109,13 @@ Intramural Sports<br>
 - [Software Requirements Planning - Skillsoft](https://www.credential.net/d007ad83-e9d3-4fe5-806b-98646b7a2dc6)<br>
 - [Software Project Management Communication Skills - Skillsoft](https://www.credential.net/abe6e37c-b14d-4a62-9699-d0ec7b72709d)<br>
 - [Agile for Software Development: Lean, Agile, & Scrum Methodologies - Skillsoft](https://www.credential.net/f0b0261e-37b8-4457-92db-10e650ee254f)<br>
-- [What Is Disciplined Agile? - LinkedIn Learning](http://127.0.0.1:4000/assets/Certificates/CertificateOfCompletion_What%20Is%20Disciplined%20Agile.pdf)<br>
+- [What Is Disciplined Agile? - LinkedIn Learning](https://jeffcamacho.com/assets/Certificates/CertificateOfCompletion_What%20Is%20Disciplined%20Agile.pdf)<br>
 - [Reporting in Jira Software - Skillsoft](https://skillsoft.digitalbadges.skillsoft.com/7a877ab2-6270-48ac-bb03-5f8cd3a2bd35)<br>
 
 **Project Management**<br>
-- [Certified Project Officer - Institute of Project Management](http://127.0.0.1:4000/assets/Certificates/CPO-8892687015-A4.pdf)<br>
-- [Lean Six Sigma White Belt - Management and Strategy Institute](http://127.0.0.1:4000/assets/Certificates/MSI%20LSSWB%20Certificate.pdf)<br>
-- [Project Management Foundations: Risk - LinkedIn Learning](http://127.0.0.1:4000/assets/Certificates/CoC_PMF_Risk.pdf)<br>
+- [Certified Project Officer - Institute of Project Management](https://jeffcamacho.com/assets/Certificates/CPO-8892687015-A4.pdf)<br>
+- [Lean Six Sigma White Belt - Management and Strategy Institute](https://jeffcamacho.com/assets/Certificates/MSI%20LSSWB%20Certificate.pdf)<br>
+- [Project Management Foundations: Risk - LinkedIn Learning](https://jeffcamacho.com/assets/Certificates/CoC_PMF_Risk.pdf)<br>
 - [Business Intelligence: Project Data Analysis - Skillsoft](https://www.credential.net/cff3d67a-58bd-4e37-b956-37c4a29e3c3e)<br>
 - [Project Evaluation: Defining Success Metrics - Skillsoft](https://www.credential.net/70cdb34c-7f38-4fed-af46-c5d42fa33838)<br>
 - [Business Orientation: Strategic Organizational Goals - Skillsoft](https://www.credential.net/fb35f77d-dba3-4feb-b5b0-05075ba98989)<br>
@@ -143,12 +143,12 @@ Intramural Sports<br>
 - [Senior Software Project Manager - Skillsoft](https://skillsoft.digitalbadges.skillsoft.com/bcddbe34-7584-4442-8a8a-ef40a7afd3b9)<br>
 
 **Data Science**<br>
-- [Executive Data Science - Johns Hopkins University](http://127.0.0.1:4000/assets/Certificates/JHU/JHU_EDS_Cert.pdf)<br>
-- [A Crash Course in Data Science - Johns Hopkins University](http://127.0.0.1:4000/assets/Certificates/JHU/JHU_EDS_A%20Crash%20Course%20in%20Data%20Science.pdf)<br>
-- [Building a Data Science Team - Johns Hopkins University](http://127.0.0.1:4000/assets/Certificates/JHU/JHU_EDS_Building%20a%20Data%20Science%20Team.pdf)<br>
-- [Managing Data Analysis - Johns Hopkins University](http://127.0.0.1:4000/assets/Certificates/JHU/JHU_EDS_Managing%20Data%20Analysis.pdf)<br>
-- [Data Science in Real Life - Johns Hopkins University](http://127.0.0.1:4000/assets/Certificates/JHU/JHU_EDS_Data%20Science%20in%20Real%20Life.pdf)<br>
-- [Executive Data Science Capstone - Johns Hopkins University](http://127.0.0.1:4000/assets/Certificates/JHU/JHU_EDS_Executive%20Data%20Science%20Capstone.pdf)<br>
+- [Executive Data Science - Johns Hopkins University](https://jeffcamacho.com/assets/Certificates/JHU/JHU_EDS_Cert.pdf)<br>
+- [A Crash Course in Data Science - Johns Hopkins University](https://jeffcamacho.com/assets/Certificates/JHU/JHU_EDS_A%20Crash%20Course%20in%20Data%20Science.pdf)<br>
+- [Building a Data Science Team - Johns Hopkins University](https://jeffcamacho.com/assets/Certificates/JHU/JHU_EDS_Building%20a%20Data%20Science%20Team.pdf)<br>
+- [Managing Data Analysis - Johns Hopkins University](https://jeffcamacho.com/assets/Certificates/JHU/JHU_EDS_Managing%20Data%20Analysis.pdf)<br>
+- [Data Science in Real Life - Johns Hopkins University](https://jeffcamacho.com/assets/Certificates/JHU/JHU_EDS_Data%20Science%20in%20Real%20Life.pdf)<br>
+- [Executive Data Science Capstone - Johns Hopkins University](https://jeffcamacho.com/assets/Certificates/JHU/JHU_EDS_Executive%20Data%20Science%20Capstone.pdf)<br>
 - [IBM Data Science Professional Certificate - IBM](https://www.coursera.org/account/accomplishments/professional-cert/BSFAZMQRPN5G)<br>
 - [Open Source Tools for Data Science - IBM](https://www.youracclaim.com/badges/5b687740-1873-4459-a551-3a323a8e5a21)<br>
 - [Python for Data Science and AI - IBM](https://www.youracclaim.com/badges/f8725800-7aaa-4da9-945e-eef6c0dc293e)<br>
@@ -159,7 +159,7 @@ Intramural Sports<br>
 - [Machine Learning with Python - IBM](https://www.youracclaim.com/badges/35e934b6-2d91-4ec3-a630-1c3fcdf32421)<br>
 - [Support Vector Machines in Python, From Start to Finish - Rhyme](https://www.coursera.org/account/accomplishments/records/VBB2Y8D3T4EA)<br>
 - [Custom Prediction Routine on Google AI Platform - Rhyme](https://www.coursera.org/account/accomplishments/records/L83922ZZM4EA)<br>
-- [Excel Business Intelligence: Power Query - LinkedIn Learning](http://127.0.0.1:4000/assets/Certificates/CoC_LIL_Excel%20Business%20Intelligence_Power%20Query.pdf)<br>
+- [Excel Business Intelligence: Power Query - LinkedIn Learning](https://jeffcamacho.com/assets/Certificates/CoC_LIL_Excel%20Business%20Intelligence_Power%20Query.pdf)<br>
 
 **DevOps**<br>
 - [Get Ahead in DevSecOps - LinkedIn Learning Path](https://jeffcamacho.com/assets/Certificates/CoC_LIL_DOF.pdf)<br>
@@ -174,9 +174,9 @@ Intramural Sports<br>
 - [Advanced Google Analytics - Google](https://analytics.google.com/analytics/academy/certificate/Qs-qerw4S2WFL71ycZPzkw)<br>
 
 **Defense Acquisition**<br>
-- [Fundamentals of Systems Acquisition Management - Defense Acquisition University](http://127.0.0.1:4000/assets/Certificates/DAU_ACQ1010_FundofSysAcqMgmt.pdf)<br>
-- [Cost Analysis - Defense Acquisition University](http://127.0.0.1:4000/assets/Certificates/DAU_CLB007_CostAnalysis.pdf)<br>
-- [Introduction to Risk, Issue, and Opportunity Management Credential - Defense Acquisition University](http://127.0.0.1:4000/assets/Certificates/Introduction%20to%20Risk,%20Issue,%20and%20Opportunity%20Management%20Credential.pdf)<br>
+- [Fundamentals of Systems Acquisition Management - Defense Acquisition University](https://jeffcamacho.com/assets/Certificates/DAU_ACQ1010_FundofSysAcqMgmt.pdf)<br>
+- [Cost Analysis - Defense Acquisition University](https://jeffcamacho.com/assets/Certificates/DAU_CLB007_CostAnalysis.pdf)<br>
+- [Introduction to Risk, Issue, and Opportunity Management Credential - Defense Acquisition University](https://jeffcamacho.com/assets/Certificates/Introduction%20to%20Risk,%20Issue,%20and%20Opportunity%20Management%20Credential.pdf)<br>
 
 **The Microsoft Ignite Data Analyst Challenge 2021**<br>
 - [Discover Data Analysis - Microsoft Ignite Challenge](https://docs.microsoft.com/en-us/users/jeffcamacho-1728/achievements)<br>
@@ -200,8 +200,8 @@ Intramural Sports<br>
 - [Technical Writing: Reports - LinkedIn Learning](https://jeffcamacho.com/assets/Certificates/CoC_LIL_TW.pdf)<br>
 - [Operational Planning Guidelines / COVID-19 Partners Platform - WHO](https://jeffcamacho.com/assets/Certificates/WHO_COVID.pdf)<br>
 - [Consulting Foundations - LinkedIn Learning](https://jeffcamacho.com/assets/Certificates/CoC_CF.pdf)<br>
-- [Writing White Papers - LinkedIn Learning](http://127.0.0.1:4000/assets/Certificates/CoC_LIL_Writing%20White%20Papers.pdf)<br>
-- [Business Intelligence for Consultants - LinkedIn Learning](http://127.0.0.1:4000/assets/Certificates/CoC_LIL_Business%20Intelligence%20for%20Consultants.pdf)<br>
+- [Writing White Papers - LinkedIn Learning](https://jeffcamacho.com/assets/Certificates/CoC_LIL_Writing%20White%20Papers.pdf)<br>
+- [Business Intelligence for Consultants - LinkedIn Learning](https://jeffcamacho.com/assets/Certificates/CoC_LIL_Business%20Intelligence%20for%20Consultants.pdf)<br>
 
 **Awards**<br>
 - Distinguished Service Key - Alpha Phi Omega - Nu Gamma, Community Service Fraternity<br>
