@@ -8,15 +8,13 @@ background: '/img/posts/06.jpg'
 
 ## A. Introduction
 
-## A.1 Background on this project
-
 * * *
+
+## A.1 Background on this project
 
 This peer-reviewed capstone report and presentation/blog post is the final report for the [IBM Data Science Professional Certification](https://www.ibm.com/blogs/ibm-training/data-science-ibm-coursera/). This course is a nine-part course that covers the fundamentals of data science, open-source tools for data science, data science methodology, Python for data science and AI, databases, and SQL for data science, data analysis with Python, data visualization with Python, and machine learning with Python. All of these courses have been completed using the Jupyter Labs notebook in [IBM's Cognitive Class Laboratories](https://labs.cognitiveclass.ai/) and are stored on GitHub. This report was typed using Markdown formatting.
 
 The link to the GitHub repository for this study can be [found here](https://github.com/jeff-mos-def/Coursera_Capstone/tree/master/Applied%20Data%20Science%20Capstone/BoTN%20Final).
-
-* * *
 
 ## A.2 Topic Selection Data Description
 
@@ -30,9 +28,9 @@ With this knowledge known, the focus here is to educate any interested party tha
 
 These problems will are considered, and a map will be created with an informational view of clustered venues and median real estate values.
 
-* * *
-
 ## B. Methodology
+
+* * *
 
 In order to find all of this data, several sources will be used:
 
@@ -111,6 +109,8 @@ Housing costs were then binned in the following ranges:
 
 ## C. Results
 
+* * *
+
 The data is now able to be displayed in a centralized table for final viewing and visualization.
 
 First, the clusters are added into the "Top 10" table:
@@ -130,9 +130,9 @@ In the final map, we have a combined representation of all the data pulled and g
 
 <img width="432" height="709" src="https://media-exp1.licdn.com/dms/image/C5612AQGbk4p93jzEeQ/article-inline_image-shrink_1000_1488/0/1588797299509?e=1640822400&v=beta&t=pm2u8PeUOLrJ0zekYqO0JiRmDZab-at-WsQBKzhGs_c"/>
 
-* * *
-
 ## D. Discussion
+
+* * *
 
 With the continuous influx of people relocating to Austin, Tx, this information could be valuable. Austin is a growing city with many different neighborhoods that sport many various venues and costs associated with each location.
 
@@ -142,15 +142,15 @@ The median home values were also taken from 2018, as this was the most current d
 
 This information would also be of knowledge that investors, small business owners, and budding entrepreneurs would like to see. By seeing the top businesses in a given area, along with the surrounding areas, one could quickly call back the dataframe containing the raw data to see each separate business to forecast investment, construction, marketing, or advertising.
 
-* * *
-
 ## E. Conclusion
+
+* * *
 
 Planning a visit, move, or business venture always requires research. With a quick overview, one could get at a bird's eye view of the data of the Austin, Tx area. It could be seen what to expect when coming to this city. This gives a look-ahead to investors, property managers, or city planners as well.
 
-* * *
-
 ## F. References
+
+* * *
 
 1.  “Austin, Texas.” Wikipedia, Wikimedia Foundation, 4 May 2020, [en.wikipedia.org/wiki/Austin,_Texas](http://en.wikipedia.org/wiki/Austin,_Texas).
 2.  Egan, John. “This Is How Much Austin's Population Could Surge through 2029, Study Says.” CultureMap Austin, 15 Jan. 2020,[austin.culturemap.com/news/city-life/01-15-20-austin-population-growth-through-2029-cushman-wakefield/](http://austin.culturemap.com/news/city-life/01-15-20-austin-population-growth-through-2029-cushman-wakefield/).
