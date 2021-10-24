@@ -1,0 +1,163 @@
+I"�<<h2 id="a-introduction">A. Introduction</h2>
+
+<h2 id="a1-background-on-this-project">A.1 Background on this project</h2>
+
+<hr />
+
+<p>This peer-reviewed capstone report and presentation/blog post is the final report for the <a href="https://www.ibm.com/blogs/ibm-training/data-science-ibm-coursera/">IBM Data Science Professional Certification</a>. This course is a nine-part course that covers the fundamentals of data science, open-source tools for data science, data science methodology, Python for data science and AI, databases, and SQL for data science, data analysis with Python, data visualization with Python, and machine learning with Python. All of these courses have been completed using the Jupyter Labs notebook in <a href="https://labs.cognitiveclass.ai/">IBM’s Cognitive Class Laboratories</a> and are stored on GitHub. This report was typed using Markdown formatting.</p>
+
+<p>The link to the GitHub repository for this study can be <a href="https://github.com/jeff-mos-def/Coursera_Capstone/tree/master/Applied%20Data%20Science%20Capstone/BoTN%20Final">found here</a>.</p>
+
+<hr />
+
+<h2 id="a2-topic-selection-data-description">A.2 Topic Selection Data Description</h2>
+
+<p>Austin, Tx is the technology centerpiece of the State of Texas. Nested north of San Antonio, Tx, and south of Dallas/Fort Worth, Tx Austin serves as the capital of the state with a population of <a href="https://en.wikipedia.org/wiki/Austin,_Texas">790,390 and a population density of 3,182/sq mi</a>. The city has seen growth within the last decade due to large technology and software companies coming into the Central Texas Region. From 2007 - 2017 alone, the percentage population growth of the City of <a href="https://www.austinchamber.com/economic-development/austin-profile/population/overview">Austin rivaled that of the State of Texas and the United States</a>.</p>
+
+<h3 id="population-growth-from-2007---2017"><a href="https://cdn1.austinchamber.com/archive/images/ed/chart-population-growth.jpg?mtime=20190620093848">Population Growth from 2007 - 2017</a></h3>
+
+<p><img width="432" height="324" src="https://media-exp1.licdn.com/dms/image/C5612AQHg1HEO43LiTg/article-inline_image-shrink_1000_1488/0/1588796600849?e=1640822400&amp;v=beta&amp;t=uBzHUME4Nkjf2sJrzqW9W3aCBkqExUyPUyf0m0-DY2A" /></p>
+
+<p>With this knowledge known, the focus here is to educate any interested party that would be coming to the City of Austin for work or leisure would like to know about some particular venues or hotspots within the city. Any business owners that may want to start a business in a given section of a city would also want to know what the current popular venues are in each respectable neighborhood. Those looking to buy a home would want to see what the median cost of a home would be in each community.</p>
+
+<p>These problems will are considered, and a map will be created with an informational view of clustered venues and median real estate values.</p>
+
+<hr />
+
+<h2 id="b-methodology">B. Methodology</h2>
+
+<p>In order to find all of this data, several sources will be used:</p>
+
+<ul>
+  <li>Google Sheets scripts for quickly obtaining zip codes and latitudinal and longitudinal coordinates</li>
+  <li><a href="https://developer.foursquare.com/">Foursquare API</a> to scrape the local area for venues in each neighborhood</li>
+  <li><a href="https://geo.nyu.edu/">GEOJson file</a> for mapping of the Austin, Tx area</li>
+  <li>A regional area analysis of housing prices obtained through <a href="https://library.austintexas.gov/database/gale-business-demographicsnow">DemographicsNow</a></li>
+</ul>
+
+<p>First, the latitudinal and longitudinal coordinates of each neighborhood would be needed. The zip codes and names of these neighborhoods would be found on Wikipedia and independently scraped using an external Jupyter Notebook utilizing <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">BeautifulSoup4</a>, a web scraper. Once the zip codes were identified, latitudinal and longitudinal coordinates were found via a <a href="https://raw.githubusercontent.com/jeff-mos-def/Coursera_Capstone/master/Applied%20Data%20Science%20Capstone/BoTN%20Final/Snapshots/ziploc.jpg">GSheets script</a>. This was stored in a GSheets file, and using the scraped data previously acquired. The neighborhoods had their names concatenated with “Tx” so the <a href="https://raw.githubusercontent.com/jeff-mos-def/Coursera_Capstone/master/Applied%20Data%20Science%20Capstone/BoTN%20Final/Snapshots/geo2zip.jpg">zip codes were then able to be matched</a> to the scraped communities. Areas containing the same zip codes were then matched and strung together.</p>
+
+<p>Next, the report of median housing costs would be needed. Fortunately, the Austin Virtual Library has access to <a href="https://library.austintexas.gov/database/gale-business-demographicsnow">DemographicsNow</a>, a tool that could be used to quickly obtain all relevant data in regards to median housing prices. Immediate housing prices were not available, so the data used was taken in 2018. The housing cost data was then added to the neighborhood listings.</p>
+
+<p>All data was stored in a GitHub repository and IBM Cognitive Class Laboratory. The data was saved as a CSV and called into a dataframe using Pandas. This resulted in the working dataframe to be used:</p>
+
+<p><img width="432" height="132" src="https://media-exp1.licdn.com/dms/image/C5612AQEkGAHC7_SflQ/article-inline_image-shrink_1000_1488/0/1588796711630?e=1640822400&amp;v=beta&amp;t=h2K4vawE8ofvIDPImk9C1kKEkoSOe-avXSOXroqHr4E" /></p>
+
+<p><a href="https://python-visualization.github.io/folium/">Folium</a> was used to map the local Austin area. Markers were overlayed to designate which areas consisted of neighborhoods, as identified by latitudinal and longitudinal coordinates.</p>
+
+<p><img width="432" height="492" src="https://media-exp1.licdn.com/dms/image/C5612AQGuwu7RPlnpNw/article-inline_image-shrink_1000_1488/0/1588796759105?e=1640822400&amp;v=beta&amp;t=SfU7A5NFOo4Kd229yVGdR0usnxfBIMJ6CKb54gNZkeE" /></p>
+
+<p>In a previous exercise, it was learned that the FourSquare API could be utilized to explore the contents of boroughs, here defined as neighborhoods, and segment them into a local area search. Due to the broad area of Austin, a radius of 5500 meters (34.18 miles) was used as a visitor may want to drive across Austin to see various sights. Venues were limited at 100 for this exercise. When FourSquare was called upon, the head() of the call brought the following venues:</p>
+
+<p><img width="432" height="163" src="https://media-exp1.licdn.com/dms/image/C5612AQHtw1cZELMQaQ/article-inline_image-shrink_1000_1488/0/1588796822123?e=1640822400&amp;v=beta&amp;t=xV-7bpuIwBG8EJbLLyF32OUepts8jYVXqdSM4vOPOZM" /></p>
+
+<p>When this data was looked at as a whole, it was discovered that FourSquare included gas stations, convenience stores, and bus stops in the API feedback. Ultimately, this was left in the whole of the data as some gas stations and convenience stores in Austin have bespoke goods or services. Bus stations and street intersections were also left in to keep the whole of the FourSquare data.</p>
+
+<p>When checked, a total of 720 separate venues within the city was met. This table was then merged with the table of the neighborhoods.</p>
+
+<p><img width="744" height="177" src="https://media-exp1.licdn.com/dms/image/C5612AQEOYYPicmS9wA/article-inline_image-shrink_1000_1488/0/1588796873181?e=1640822400&amp;v=beta&amp;t=S1Mbce9t01ZqN_uG_N0KIVZsMPdxYPUdfutcElxBI88" /></p>
+
+<p>When the data were pooled for evaluation, there were some interesting findings. Only one neighborhood hit the limit of 100 venues per zip code, despite the fact that this is a merged zip code list. This could be due to incorrect identification by the business itself, or by not enough FourSquare reviews in certain areas.</p>
+
+<p>It was also found that the zip codes of specific neighborhoods (Westlake Hills, NorthWest Austin, and RiverPlace) were producing errors in the data analysis and returning 0 venues. These zip codes were removed for venue analysis but kept for housing cost analysis.</p>
+
+<p>The original bar graph generated had shortened neighborhood names. Full names are listed for complete viewing.</p>
+
+<p><img width="744" height="284" src="https://media-exp1.licdn.com/dms/image/C5612AQGdEddATDRklg/article-inline_image-shrink_1000_1488/0/1588796915172?e=1640822400&amp;v=beta&amp;t=v-daalmpIRbQ0p4FrjmfIkx72PUINPsw071yX2FfaXE" /></p>
+
+<p>Out of all the venues polled by Foursquare, the noise needed to be cleared out for further analysis. A “Top 10” venue list was created for each neighborhood.</p>
+
+<p><img width="744" height="151" src="https://media-exp1.licdn.com/dms/image/C5612AQH7gSDE1y6gsg/article-inline_image-shrink_1000_1488/0/1588796985453?e=1640822400&amp;v=beta&amp;t=jkesFPucwHRjkfGC81hYFzB87h_a1XVYwp3Ic3N96gc" /></p>
+
+<p>Further analysis would need to be done to group our neighborhoods by common venues. Unsupervised K-Means clustering will be used in this instance. To consolidate our venues, we will need to know what our optimal k value would be for clustering. The elbow method will be used to find this optimal k value.</p>
+
+<p><img src="https://media-exp1.licdn.com/dms/image/C5612AQFw_VcN6AyNaA/article-inline_image-shrink_1000_1488/0/1588797015140?e=1640822400&amp;v=beta&amp;t=atwaGo1Q5qaUpunAEMvAEPaseRPC37J18r6e57nY0Yo" /></p>
+
+<p>The optimal k value would be 2 in this case. This is not an optimal case for k value cluster visualization. All venues across Austin would be grouped into two bins. Despite what the data is saying, the k value selected will be 5 for visual purposes.</p>
+
+<p>The venues were grouped in a “Top 10” fashion, yielding this table:</p>
+
+<p><img src="https://media-exp1.licdn.com/dms/image/C5612AQHtw1cZELMQaQ/article-inline_image-shrink_1000_1488/0/1588796822123?e=1640822400&amp;v=beta&amp;t=xV-7bpuIwBG8EJbLLyF32OUepts8jYVXqdSM4vOPOZM" /></p>
+
+<p>The 1st Most Common Venue can also be displayed via a bar chart.</p>
+
+<p><img width="744" height="314" src="https://media-exp1.licdn.com/dms/image/C5612AQFYEIblQFSL8g/article-inline_image-shrink_1000_1488/0/1588797143845?e=1640822400&amp;v=beta&amp;t=lS9XFk_6JIRqf-Nw4bKobQjPbcGSSnU4Xyrjil570iQ" /></p>
+
+<p>Clusters were then labeled according to their contents:</p>
+
+<ul>
+  <li>Cluster 0: Pizza/Coffee</li>
+  <li>Cluster 1: Home Stores</li>
+  <li>Cluster 2: Total Austin</li>
+  <li>Cluster 3: Indian Restaurants</li>
+  <li>Cluster 4: Parks</li>
+</ul>
+
+<p>Housing costs were also a point of concern in this study. Referring back to our first dataset, we can put the housing prices in Austin in a histogram for visualization:</p>
+
+<p><img width="744" height="314" src="https://media-exp1.licdn.com/dms/image/C5612AQGviTuS5Ael9g/article-inline_image-shrink_1000_1488/0/1588797185336?e=1640822400&amp;v=beta&amp;t=iQ9c1M_rDm-czjzxdhm7_7O9Vt7KjcdSU00D1Y_AJO0" /></p>
+
+<p>Housing costs were then binned in the following ranges:</p>
+
+<ul>
+  <li>Less than 150,000 USD</li>
+  <li>Ranging from 150,001-300,000 USD</li>
+  <li>Ranging from 300,001-450,000 USD</li>
+  <li>Ranging from 450,001-600,000 USD</li>
+  <li>Greater than 600,000 USD</li>
+</ul>
+
+<h2 id="c-results">C. Results</h2>
+
+<p>The data is now able to be displayed in a centralized table for final viewing and visualization.</p>
+
+<p>First, the clusters are added into the “Top 10” table:</p>
+
+<p><img src="https://media-exp1.licdn.com/dms/image/C5612AQHevMZW4gJjFg/article-inline_image-shrink_1000_1488/0/1588797226020?e=1640822400&amp;v=beta&amp;t=V10XjZypGdJSSfAP5KPtbVjQAW19P-plei_6Su9CQ-Q" /></p>
+
+<p>Now the kmeans clustered and grouped zip codes are clearly defined on the generated map:</p>
+
+<p><img width="432" height="380" src="https://media-exp1.licdn.com/dms/image/C5612AQHit-jCb3cFyg/article-inline_image-shrink_1000_1488/0/1588797268833?e=1640822400&amp;v=beta&amp;t=3t7e0vV53vXcpraic1EQoLhKkQKEaRMiLBlVxg_fJTI" /></p>
+
+<p>In the final map, we have a combined representation of all the data pulled and grouped for this project. A GEOJson file was downloaded from the Spatial Data Repository and used for this purpose. This map was then overlayed with the following information:</p>
+
+<ul>
+  <li>Neighborhood name</li>
+  <li>Cluster name</li>
+  <li>Top 3 venues</li>
+  <li>Color-coded representation of median housing cost</li>
+</ul>
+
+<p><img width="432" height="709" src="https://media-exp1.licdn.com/dms/image/C5612AQGbk4p93jzEeQ/article-inline_image-shrink_1000_1488/0/1588797299509?e=1640822400&amp;v=beta&amp;t=pm2u8PeUOLrJ0zekYqO0JiRmDZab-at-WsQBKzhGs_c" /></p>
+
+<hr />
+
+<h2 id="d-discussion">D. Discussion</h2>
+
+<p>With the continuous influx of people relocating to Austin, Tx, this information could be valuable. Austin is a growing city with many different neighborhoods that sport many various venues and costs associated with each location.</p>
+
+<p>The methods of grouping and clustering venues throughout the city remains in question. Although using the elbow method to identify the optimal k value to be used for k means clustering is the tried and true way of partitioning observations, it would not have yielded much to visualize in this scenario. With k = 5, the clustering was forced to group more venues into separate clusters. This method created a more visually attainable view of the data.</p>
+
+<p>The median home values were also taken from 2018, as this was the most current data available. However, this would still provide the reader with an overall view of the median value distribution over the city. When newer data is available, the code can be updated.</p>
+
+<p>This information would also be of knowledge that investors, small business owners, and budding entrepreneurs would like to see. By seeing the top businesses in a given area, along with the surrounding areas, one could quickly call back the dataframe containing the raw data to see each separate business to forecast investment, construction, marketing, or advertising.</p>
+
+<hr />
+
+<h2 id="e-conclusion">E. Conclusion</h2>
+
+<p>Planning a visit, move, or business venture always requires research. With a quick overview, one could get at a bird’s eye view of the data of the Austin, Tx area. It could be seen what to expect when coming to this city. This gives a look-ahead to investors, property managers, or city planners as well.</p>
+
+<hr />
+
+<h2 id="f-references">F. References</h2>
+
+<ol>
+  <li>“Austin, Texas.” Wikipedia, Wikimedia Foundation, 4 May 2020, <a href="http://en.wikipedia.org/wiki/Austin,_Texas">en.wikipedia.org/wiki/Austin,_Texas</a>.</li>
+  <li>Egan, John. “This Is How Much Austin’s Population Could Surge through 2029, Study Says.” CultureMap Austin, 15 Jan. 2020,<a href="http://austin.culturemap.com/news/city-life/01-15-20-austin-population-growth-through-2029-cushman-wakefield/">austin.culturemap.com/news/city-life/01-15-20-austin-population-growth-through-2029-cushman-wakefield/</a>.</li>
+  <li>“Foursquare Developer.” Foursquare Developer, <a href="http://developer.foursquare.com/">developer.foursquare.com/</a>.</li>
+  <li>Gale Business: Demographics Now, <a href="http://www.gale.com/c/business-demographicsnow">www.gale.com/c/business-demographicsnow</a>.</li>
+  <li>NYU Spatial Data Repository, <a href="http://geo.nyu.edu/">geo.nyu.edu/</a>.</li>
+  <li>“Population Overview.” Austin Chamber of Commerce, <a href="http://www.austinchamber.com/economic-development/austin-profile/population/overview">www.austinchamber.com/economic-development/austin-profile/population/overview</a>.</li>
+</ol>
+:ET
